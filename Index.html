@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8aed0de909.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/Index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <form action="" class="form-div">
+                <h1 class="title"> Apply now!</h1>
+                <h2 class="title sub">Apply to join 
+                    the knights of the dark forest now!</h2>
+
+                <div class="info">
+                    <div>
+                        <div class="label-box">
+                            <label for="name" class="label">
+                            Full name</label><br></div>
+                        <input type="text" name="name" class="text" required
+                        placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <div class="label-box">
+                            <label for="email" class="label">
+                            Email adress</label><br></div>
+                        <input type="email" name="email" 
+                        class="text" required placeholder="Enter your email adress">
+                    </div>
+
+                    <div class="select-container">
+                        <div class="label-box">
+                            <label for="select" class="label">
+                            What type of class would you like to play?
+                        </label></div>
+                        <div class="select-box">
+                            <i class="fas fa-chevron-circle-down"></i>
+                            <select name="select" class="select" id="select" required>
+                                <option disabled selected>--select a class-- </option>
+                                <option value="Holy-knight" class="label">Holy knight</option>
+                                <option value="Hunter" class="label">Hunter</option>
+                                <option value="Warrior" class="label">Warrior</option>
+                                <option value="Warlock" class="label">Warlock</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="label-box">
+                            <label for="password" class="label">
+                            Choose a password</label><br></div>
+                        <input type="password" name="password" 
+                        class="text" required placeholder="Enter your password"
+                        minlength="8">
+                    </div>
+                </div>
+
+                <div class="checkbox-box">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <span class="checkbox-span"><i class="fas fa-check"></i></span>
+                    <label for="checkbox" class="checkbox-text"> 
+                        I would like to subscribe
+                        to The Dark Forest newsletter
+                    </label>
+                </div>
+
+                <div class="button-box">
+                    <button type="submit" class="button">Submit</button></div>    
+        </form>
+    </main>
+</body>
+</html>

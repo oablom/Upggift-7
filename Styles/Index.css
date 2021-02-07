@@ -1,0 +1,228 @@
+/* Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset*/
+
+body {
+    background-image: url('../Images/Image.jpg');
+        background-size: cover;
+        height: 800px;
+}
+
+    .main {
+        display: flex;
+        justify-content: center;
+       
+    }
+
+     .form-div {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateY(20px);
+            width: 300px;
+            height: 500px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            padding: 10px;
+            font-family: 'IM Fell English SC', serif;
+        }
+
+            .title {
+                background-color: orange;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                border: rgb(170, 118, 22);
+                border-style: solid;
+                cursor: default;
+                width: 290px;
+            }
+
+            .sub {
+                font-size: 17px;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 290px;
+                height: 210px;
+            }
+
+            .label-box {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                background-color: orange;
+                border: rgb(170, 118, 22);
+                border-style: solid;
+            }
+
+                .label {
+                    color: black;
+                    font-size: 14px;
+                }
+
+            .text, .select {
+                background: rgba(66, 65, 65, 0.5);
+                cursor: text;
+                width: 288px;
+                color: darkgray;
+                font-family: 'IM Fell English SC', serif; 
+            }
+
+            .text {
+                width: 281px;
+            }
+
+             /* <selecbox> */
+            .select-box {
+                display: flex;
+                justify-content: flex-end;   
+            }
+
+                .select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;  
+                }
+
+                .fas {
+                    position: absolute;
+                    pointer-events: none;
+                    color: orange;
+                    font-size: 10px;
+                    align-self: center;
+                    transform: translateX(-2px);
+                }
+
+                
+                 /* .select-box::after {
+                    position: absolute;
+                    content: "V";
+                    color: white;
+                    transform: translateX(-100%);
+                    pointer-events: none;
+                 } */
+            /* </selecbox> */    
+
+            /* <checkbox> */
+            .checkbox-box {
+                width: 298px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .checkbox {
+                opacity: 0;
+                transform: translateX(1px);
+                width: 20px;
+                height: 20px;
+            }
+
+            .checkbox-span {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                transform: translateX(-2px);
+                margin-left: 10px;
+                border-style: solid;
+                border-color: orange;
+                border-width: 2px;
+                background-color: transparent;
+                pointer-events: none;
+                
+            }
+            
+            .checkbox:checked + .checkbox-span .fas {
+                color: lightgray;
+            }
+
+            .checkbox:not(:checked) + .checkbox-span .fas {
+                color: transparent;
+            }
+            
+
+                .select, .checkbox, .checkbox-text {
+                    cursor: pointer;
+                }
+
+                .checkbox-text {
+                    width: 250px;
+                }
+           
+             /* </checkbox> */
+
+            .button {
+                background-color: orange;
+                height: 46px;
+                width: 102px;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: 'IM Fell English SC', serif;
+                cursor: pointer;
+            }
+
+            /* <hover> */
+                .button:hover {
+                    background-color: rgba(255, 166, 0, 0.795);
+                }
+
+                .text:hover {
+                    background-color: transparent;
+                }
+
+                ::placeholder, .checkbox-text {
+                    color: darkgray;
+                    font-size: 14px;
+                }
+            /* </hover> */
+          
